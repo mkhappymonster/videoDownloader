@@ -5,10 +5,10 @@ down = input(" v:to download video \n p:to download playlist \n ")
 if ( down == "v" ):
     link = input("Video link : ")
     video = YouTube(link)
-    print(f"Video Title :\n{video.title}\n----*-----*----------* ")
-    print(f"Video description :\n{video.description}\n----*-----*----------* ")
-    print(f"Video views :\n{video.views}\n----*-----*----------* ")
-    print(f"Video captions :\n{video.captions}\n----*-----*----------* ")
+    #print(f"Video Title :\n{video.title}\n----*-----*----------* ")
+    #print(f"Video description :\n{video.description}\n----*-----*----------* ")
+    #print(f"Video views :\n{video.views}\n----*-----*----------* ")
+    #print(f"Video captions :\n{video.captions}\n----*-----*----------* ")
     for stream in video.streams:
         print(stream)
         def finish():
